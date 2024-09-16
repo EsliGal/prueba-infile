@@ -3,9 +3,6 @@ import { Typography, Container, Box, CircularProgress } from '@mui/material';
 import { toast } from 'react-toastify';
 import { getCV } from '../service/route';
 
-import { Document, Page, pdfjs } from 'react-pdf';
-pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@3.0.279/build/pdf.worker.min.js`;
-
 const MostrarCV = ({ token }) => {
   const [cvUrl, setCvUrl] = useState('');
   const [loading, setLoading] = useState(true);
